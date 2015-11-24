@@ -4,7 +4,7 @@
   "version": "0.0.0",
     "engines": {
         "node": "4.1.1",
-        "npm": "1.4.28"
+        "npm": "3.4.1"
     },
   "scripts": {
     "init": "npm install",
