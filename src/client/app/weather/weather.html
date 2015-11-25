@@ -1,9 +1,10 @@
 <div class="container" ng-show="vm.currentWeather">
     <img class="bkgnd" src="/images/places/{{vm.location.key}}/1.jpg" />
     <div class="weather">
-        <img src="/images/icons/{{vm.currentWeather.icon}}" />
-        <h1>{{vm.currentWeather.temperature | number:0}}</h1>
-        <p>Feels like {{vm.currentWeather.apparentTemperature | number:0}}</p>
+        <canvas id="{{vm.currentWeather.icon}}" width="128" height="128"></canvas>
+        <p>{{vm.address}}</p>
+        <h1>{{vm.currentWeather.temperature | number:0}}&deg;</h1>
+        <p>Feels like {{vm.currentWeather.apparentTemperature | number:0}}&deg;</p>
         <p>{{vm.currentWeather.summary}}</p>
         <p>Wind: {{vm.currentWeather.windBearing | wind}} {{vm.currentWeather.windSpeed}} mph</p>
         <p>Precip: {{vm.currentWeather.precipProbability | percentage}}%</p>
@@ -12,8 +13,9 @@
     </div>
     <div class="forecast row">
         <div class="daily col-sm-5ths" ng-repeat="day in vm.dailyWeather">
-            <p>{{day.time | date:'EEEE'}}</p>
-            {{day.temperatureMax | number:0}} | {{day.temperatureMin | number:0}}
+            <h4>{{day.time | date:'EEEE'}}</h4>
+            <canvas id="day{{$index}}" width="64" height="64"></canvas>
+            <p class="min-max-temps"><span class="temp max-temp">{{day.temperatureMax | number:0}}&deg;</span> | <span class="temp min-temp">{{day.temperatureMin | number:0}}&deg;</span> F</p>
             <p>{{day.summary}}</p>
         </div>
     </div>

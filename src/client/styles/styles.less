@@ -204,28 +204,36 @@ a.btn {
 }
 
 .col-xs-5ths {
-    width: 20%;
+    width: 16%;
     float: left;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 @media (min-width: 768px) {
     .col-sm-5ths {
-        width: 20%;
+        width: 16%;
         float: left;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
 
 @media (min-width: 992px) {
     .col-md-5ths {
-        width: 20%;
+        width: 16%;
         float: left;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
 
 @media (min-width: 1200px) {
     .col-lg-5ths {
-        width: 20%;
+        width: 16%;
         float: left;
+        margin-left: 2%;
+        margin-right: 2%;
     }
 }
 
@@ -2000,12 +2008,15 @@ a {
 }
 
 .forecast {
-    background: rgba(100,100,100,0.5);
     margin: 0 auto;
 }
 
 .daily {
     text-align: center;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    border-radius:10px;
+    background: mintcream;
 }
 
 .wrapper {
@@ -2051,4 +2062,15 @@ input[type='text'] {
 footer {
     padding: 10px;
     z-index: 1000;
+}
+
+.min-max-temps {
+    font-size: 2em;
+}
+
+.max-temp {
+    color: red;
+}
+.min-temp {
+    color: blue;
 }

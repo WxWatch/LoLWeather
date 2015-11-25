@@ -19,7 +19,7 @@ function getPeople() {
 function getLocations() {
     return [
         {id: 1, name: 'Bandle City', key: 'bandle_city', temp_lower: 0, temp_upper: 0, wind_lower: 0, wind_upper: 10, cloud_lower: 0, cloud_upper: 0.6, precip_type: null, precip_lower: 0, precip_upper: 0.002 },
-        {id: 2, name: 'Bilgewater', key: 'bilgewater', temp_lower: 40, temp_upper: 80, wind_lower: 0, wind_upper: 10, cloud_lower: 0, cloud_upper: 0.6, precip_type: null, precip_lower: 0, precip_upper: 0.002 },
+        {id: 2, name: 'Bilgewater', key: 'bilgewater', temp_lower: 0, temp_upper: 0, wind_lower: 0, wind_upper: 10, cloud_lower: 0, cloud_upper: 0.6, precip_type: null, precip_lower: 0, precip_upper: 0.002 },
         {id: 3, name: 'Demacia', key: 'demacia', temp_lower: 40, temp_upper: 80, wind_lower: 0, wind_upper: 10, cloud_lower: 0, cloud_upper: 0.6, precip_type: null, precip_lower: 0, precip_upper: 0.002 },
         {id: 4, name: 'Freljord', key: 'freljord', temp_lower: 40, temp_upper: 80, wind_lower: 0, wind_upper: 10, cloud_lower: 0, cloud_upper: 0.6, precip_type: null, precip_lower: 0, precip_upper: 0.002 },
         {id: 5, name: 'Ionia', key: 'ionia', temp_lower: 40, temp_upper: 80, wind_lower: 0, wind_upper: 10, cloud_lower: 0, cloud_upper: 0.6, precip_type: null, precip_lower: 0, precip_upper: 0.002 },

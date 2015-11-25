@@ -18,9 +18,11 @@
             var geocoder = new google.maps.Geocoder();
             geocoder.geocode( { 'address': search}, function(results, status) {
                 if (status == google.maps.GeocoderStatus.OK) {
+                    logger.info("Geo", results);
+                    var address_components = results[0].formatted_address;
                     var lat = results[0].geometry.location.lat();
                     var lng = results[0].geometry.location.lng();
-                    callback(lat, lng);
+                    callback(lat, lng, address_components);
                 } else {
                     alert("Geocode was not successful for the following reason: " + status);
                 }
