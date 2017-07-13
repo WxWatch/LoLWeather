@@ -3,7 +3,7 @@
   "description": "LoLweather Project Generated from HotTowel Angular",
   "version": "0.0.0",
     "engines": {
-        "node": "4.1.1",
+        "node": "4.8.4",
         "npm": "3.4.1"
     },
   "scripts": {
